@@ -470,8 +470,33 @@ arrSort.sort((a, b) => b - a ); // This works
 console.log(arrSort);
 
 
+console.log(
+ arrSort.indexOf(6));
 
 
+ let arrforEach = [40 ,45, 50, 62,  77];
 
+arrforEach.forEach((value, index) => {
+    console.log("Number ", value, "index ", index);
+})
+
+let arrfor = ["Hassan", "Alisha", "Ayaan"];
+
+ for (let i = 0; i < arrfor.length; i++) {
+    console.log("Name: ", arrfor[i]);
+    
+}
+
+
+for (let index = 0 ; index < arrfor.length ; index++) {
+    console.log(arrfor[index]); //crucial add element when log for loop
+    
+}
+
+
+ for (let key in obj) {
+    console.log(key, " ", obj[key]);
+    
+ }
 
  
