@@ -409,12 +409,12 @@ brr1.map((numb, index) => {
 })
 
 let arr2 = [10, 20, 30, 40, 11, 21, 44, 51];
-let arr23 = ["hassan","komal","huzaifa","hamza", "soifia", 21, 44, 51];
+let arr23 = ["hassan", "komal", "huzaifa", "hamza", "soifia", 21, 44, 51];
 
 
 let evenArray = arr.filter((num3) => {
     // number divisible by zero
-   return num3 % 2 === 0;
+    return num3 % 2 === 0;
     // if (num3 % 2 === 0) {
     //     return true;
     // }
@@ -438,7 +438,7 @@ console.log(evenArray);
 // console.log(result3);
 
 let result3 = arr23.filter((value) => {
-    if (typeof(value) === 'string') {
+    if (typeof (value) === 'string') {
         return true;
     }
     else {
@@ -450,9 +450,9 @@ console.log(result3);
 
 // REDUCE // aap array ko reduce karna chahta hai based on your logic
 
-let arre = [10, 20 , 30 , 40, 111];
+let arre = [10, 20, 30, 40, 111];
 
-let result5 = arre.reduce((acc, curr ) => {
+let result5 = arre.reduce((acc, curr) => {
     return acc + curr;
 }, 0);
 
@@ -466,15 +466,15 @@ console.log(arrSort);
 
 
 // array sort in desc order
-arrSort.sort((a, b) => b - a ); // This works
+arrSort.sort((a, b) => b - a); // This works
 console.log(arrSort);
 
 
 console.log(
- arrSort.indexOf(6));
+    arrSort.indexOf(6));
 
 
- let arrforEach = [40 ,45, 50, 62,  77];
+let arrforEach = [40, 45, 50, 62, 77];
 
 arrforEach.forEach((value, index) => {
     console.log("Number ", value, "index ", index);
@@ -482,21 +482,89 @@ arrforEach.forEach((value, index) => {
 
 let arrfor = ["Hassan", "Alisha", "Ayaan"];
 
- for (let i = 0; i < arrfor.length; i++) {
+for (let i = 0; i < arrfor.length; i++) {
     console.log("Name: ", arrfor[i]);
-    
+
 }
 
 
-for (let index = 0 ; index < arrfor.length ; index++) {
+for (let index = 0; index < arrfor.length; index++) {
     console.log(arrfor[index]); //crucial add element when log for loop
-    
+
 }
 
 
- for (let key in obj) {
+for (let key in obj) {
     console.log(key, " ", obj[key]);
-    
- }
+
+}
+
+// for of loop
+
+let arrforOf = [10, 23, 55, 67, 99];
+
+for (let value of arrforOf) {
+    console.log(value, "forof Loop");
+}
+
+let myName = ["Hassan", "42101-235235235-5", false];
+
+for (i = 0; i < myName.length; i++) {
+    if (i == 0) {
+        console.log("Name: ", myName[0]);
+    } else if (i == 1) {
+        console.log("NIC: ", myName[1]);
+    }
+    else if (i == 2) {
+        console.log("DrivingLicense: ", myName[2]);
+    }
+}
+
+
+// arrays with functions // arrays ka function ke saath behaviour
+
+// array
+let arrFunc = [10, 2, 30, 4, 5, 50, 6]; // can also be done with reduce
+
+
+// array passed as an argument in (arrFunc) function
+function getSum(arrFunc) {
+    let len = arrFunc.length
+    sum = 0;
+    for (index = 0; index < len ; index++) {
+       sum = sum + arrFunc[index];
+    }
+    return sum;
+}
+let totalSum = getSum(arrFunc);
+console.log(totalSum);
+
+
+// function getSome(arrFunc) {
+//     // let len = arrFunc.length
+//     sum = 0;
+//     arrFunc.forEach((value) => {
+//        sum = sum + value
+//     })
+//     return sum;
+// }
+// let sumSum = getSome(arrFunc);
+// console.log(sumSum);
+
+
+// can also be created into a variable = functionexpression
+
+let wowSum = function getSome(arrFunc) {
+    // let len = arrFunc.length
+    sum = 0;
+    arrFunc.forEach((value) => {
+       sum = sum + value;
+    })
+    return sum;
+}
+ let seriousSum = wowSum(arrFunc);
+console.log(seriousSum);
 
  
+
+
