@@ -565,6 +565,18 @@ let wowSum = function getSome(arrFunc) {
  let seriousSum = wowSum(arrFunc);
 console.log(seriousSum);
 
- 
+// CALLBACK AND HOISTING
 
+// // hoisting ==> process
+// var dec
+// func dec
+
+// shift to the top of the scope
+
+// function declaration and Variable declaration
+
+// you can call function at the top even if the function defined is written down
+
+
+// in Variable declaration, variable can be declared at the top but not defined thus give output undefined
 
