@@ -450,13 +450,28 @@ console.log(result3);
 
 // REDUCE // aap array ko reduce karna chahta hai based on your logic
 
-let arre = [10, 20 , 30 , 40];
+let arre = [10, 20 , 30 , 40, 111];
 
 let result5 = arre.reduce((acc, curr ) => {
     return acc + curr;
 }, 0);
 
 console.log(result5);
+
+let arrSort = [9, 7, 5, 3, 4, 6, 1, 7, 4, 3, 5];
+
+arrSort.sort();
+
+console.log(arrSort);
+
+
+// array sort in desc order
+arrSort.sort((a, b) => b - a ); // This works
+console.log(arrSort);
+
+
+
+
 
 
  
